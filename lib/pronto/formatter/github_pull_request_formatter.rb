@@ -18,6 +18,7 @@ module Pronto
             line
           end
 
+          next if line.nil?
           create_comment(client, sha, body, path, line.position)
         end
 
